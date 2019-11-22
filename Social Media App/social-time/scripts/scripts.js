@@ -14,16 +14,23 @@ console.log(engagementObject);
 
     //DATA CONTROLLER
     const DataController =(function(){
-
-        let currentTime, currentYear, currentHour, days, currentDayData;
-        currentTime = new Date();
-        currentHour = currentTime.getHours();
-
-        days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        currentDayData = currentTime.getDay();
-        currentDay = days[currentTime.getDay()]
            
         return{
+            getDay: function(){
+                var opt, sel;
+                sel = document.getElementById('weekDay');
+                for ( var i = 0; i < sel.options.length; i++ ) {
+                    opt = sel.options[i];
+                    if (opt.selected) {
+                        break;
+                    }
+                }
+                return opt.value;
+                        
+                // display its value and text
+                console.log( opt.value );
+                console.log( opt.text );
+            },
             getSocialMedia: function(){
                 let value, form, name;
                 // get list of radio buttons with specified name
@@ -43,14 +50,10 @@ console.log(engagementObject);
             getEngagementValue: function(){
                 return document.querySelector(DOMstrings.engagementLvl).value;   
             },
-            // getNextPostingTime: function(){
-            //     for (i = 0; i < 3; i++){
-            //         let postingTime = engagementObject;
-            //         if (currentDayData > 3) {
 
-            //         }
-            //     }
-            // }
+            getNextPostingTime: function(weekDay, socialMedia, engagement){
+                console.log(engagementObject);
+            }
         }
 
     })();
@@ -78,10 +81,13 @@ console.log(engagementObject);
     const controller = (function(UICtrl, DataCtrl){
 
         const outputData = function(){
-            let engagement, socialMedia;
-            engagement = DataCtrl.getEngagementValue();
+            let weekDay, socialMedia, engagement ;
+            weekDay = DataCtrl.getDay();
             socialMedia = DataCtrl.getSocialMedia();
-            console.log(socialMedia);
+            engagement = DataCtrl.getEngagementValue();
+            console.log(weekDay, socialMedia, engagement);
+            DataCtrl.getNextPostingTime(weekDay, socialMedia, engagement);
+            
             
         }
 
