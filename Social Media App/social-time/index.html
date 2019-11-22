@@ -14,34 +14,34 @@
         </h1>
     </header>
     <main>
-        <form class = "input-container container">
+        <form id = "form" class = "input-container container">
             <div>
                 <h2>Social Media Platform</h2>
                 <div class="radio-group">
-                        <input type="radio" id="facebook" name="social-media"><label for="facebook">Facebook</label><input type="radio" id="option-two" name="social-media"><label for="option-two">Instagram</label><input type="radio" id="option-three" name="social-media"><label for="option-three">Twitter</label>
+                        <input type="radio" id="facebook" name="social-media" value = "facebook"><label for="facebook">Facebook</label><input type="radio" id="option-two" name="social-media" value = "instagram"><label for="option-two">Instagram</label><input type="radio" id="option-three" name="social-media" value = "twitter"><label for="option-three">Twitter</label>
                 </div>
             </div>
             <div>
                 <h2>Engagement Level</h2>
                 <strong id="engagement-level-value">0 - 25%</strong>
-                <input type="range" id="engagementLevel" value="1" min="1" max="4" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <input type="range" id="engagementLevel" value="0" min="0" max="3" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             </div>
             <div>
-                <input type="submit" value="Submit">
+                <button type="button" class= "inputBtn">Submit</button>
             </div>
         </form>
-        <div class = "container">
+        <div class = "engagement-time-container container">
             <h2>The Next Time to Post</h2>
-            <div class = "engagement-time-container">
-                <section class = "engagement-time">
+            <div>
+                <section class = "engagement-time time-0">
                     <p class = "day-of-week">Tuesday</p>
                     <p class = "time-of-day">12pm-10pm</p>
                 </section>
-                <section class = "engagement-time">
+                <section class = "engagement-time time-2">
                     <p class = "day-of-week">Wednesday</p>
                     <p class = "time-of-day">12pm-10pm</p>
                 </section>
-                <section class = "engagement-time">
+                <section class = "engagement-time time-3">
                     <p class = "day-of-week">Saturday</p>
                     <p class = "time-of-day">12pm-10pm</p>
                 </section>
