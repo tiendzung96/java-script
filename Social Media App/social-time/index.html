@@ -16,13 +16,69 @@
     <main>
         <form id = "form" class = "input-container container">
             <div>
-                <h2>Social Media Platform</h2>
+                <span>Day of the Week</span>
+                <!-- <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="Monday" value="Monday" name="weekDay" checked="checked" />
+                            <p class="select-box__input-text">Monday</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="Tuesday" value="Tuesday" name="weekDay" checked="checked" />
+                            <p class="select-box__input-text">Tuesday</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="Wednesday" value="Wednesday" name="weekDay" checked="checked" />
+                            <p class="select-box__input-text">Wednesday</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="Thursday" value="Thursday" name="weekDay" checked="checked" />
+                            <p class="select-box__input-text">Thursday</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="Friday" value="Friday" name="weekDay" checked="checked" />
+                            <p class="select-box__input-text">Friday</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="Saturday" value="Saturday" name="weekDay" checked="checked" />
+                            <p class="select-box__input-text">Saturday</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="Sunday" value="Sunday" name="weekDay" checked="checked" />
+                            <p class="select-box__input-text">Sunday</p>
+                        </div>
+                        <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" /></div>
+                        <ul class="select-box__list">
+                            <li><label class="select-box__option" for="Monday" aria-hidden="aria-hidden">Monday</label></li>
+                            <li><label class="select-box__option" for="Tuesday" aria-hidden="aria-hidden">Tuesday</label></li>
+                            <li><label class="select-box__option" for="Wednesday" aria-hidden="aria-hidden">Wednesday</label></li>
+                            <li><label class="select-box__option" for="Thursday" aria-hidden="aria-hidden">Thursday</label></li>
+                            <li><label class="select-box__option" for="Friday" aria-hidden="aria-hidden">Friday</label></li>
+                            <li><label class="select-box__option" for="Saturday" aria-hidden="aria-hidden">Saturday</label></li>
+                            <li><label class="select-box__option" for="Sunday" aria-hidden="aria-hidden">Sunday</label></li>
+                        </ul>
+                </div> -->
+                <!-- <input list="weekDay">
+                <datalist id="weekDay">
+                    <option value="Monday">
+                    <option value="Tuesday">
+                    <option value="Wednesday">
+                    <option value="Thursday">
+                    <option value="Friday">
+                    <option value="Saturday">
+                    <option value="Sunday">
+                </datalist> -->
+                <select name="weekDay" id="weekDay">
+                    <option value="Monday" selected>Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select> 
+            </div>
+            <div>
+                <p>Social Media Platform</p>
                 <div class="radio-group">
                         <input type="radio" id="facebook" name="social-media" value = "facebook"><label for="facebook">Facebook</label><input type="radio" id="option-two" name="social-media" value = "instagram"><label for="option-two">Instagram</label><input type="radio" id="option-three" name="social-media" value = "twitter"><label for="option-three">Twitter</label>
                 </div>
             </div>
             <div>
-                <h2>Engagement Level</h2>
+                <p>Engagement Level</p>
                 <strong id="engagement-level-value">0 - 25%</strong>
                 <input type="range" id="engagementLevel" value="0" min="0" max="3" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             </div>

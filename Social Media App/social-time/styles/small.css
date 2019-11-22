@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:100, 200, 300,400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:100, 200, 300, 400,700,800&display=swap');
 *{
     font-family: 'Barlow', sans-serif;
 }
@@ -9,30 +9,39 @@ body{
    background-color: #20bf55;
    background: linear-gradient( #20bf55 0%, #01baef 74%);
    min-height: 800px;
+   min-width: 360px;
 }
 
 
 main{
     max-width: 1000px;
-    padding: 0 10px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
 .container {
     background: rgba(247, 246, 246, 0.877);
-    padding: 30px;
-    margin: 10px;
+    padding: 20px;
+    margin: 20px auto;
     border-radius: 5px;
-    min-width: 300px;
+    max-width: 400px;
 }
 
 .input-container{
     text-align: center;
 }
 
+.input-container>div>p, .input-container span{
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 9pt;
+    color: #808080;
+    letter-spacing: 1pt;
+}
+
 h1{
     margin-top: 0;
-    padding: 70px;
+    padding: 60px 20px;
     font-size: 4em;
     font-weight: 100;
     text-align: center;
@@ -47,30 +56,141 @@ h2{
     margin-bottom: 5px;
 }
 
+/* WEEK DAY LIST */
+
+
+select{
+    border-width: 0 0 1px 0;
+    border-color: #404040;
+    background: transparent ;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #404040
+}
+
+/* .select-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #60666d;
+    width: 250px;
+}
+
+.select-box__current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+.select-box__current:focus + .select-box__list {
+    opacity: 1;
+    animation-name: none;
+}
+.select-box__current:focus + .select-box__list .select-box__option {
+    cursor: pointer;
+}
+.select-box__current:focus .select-box__icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+.select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.3;
+    transition: 0.2s ease;
+}
+.select-box__value {
+    display: flex;
+}
+.select-box__input {
+    display: none;
+}
+.select-box__input:checked + .select-box__input-text {
+    display: block;
+}
+.select-box__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+}
+.select-box__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+.select-box__option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+}
+.select-box__option:hover, .select-box__option:focus {
+    color: #546c84;
+    background-color: #fbfbfb;
+}
+@keyframes HideList {
+    from {
+        transform: scaleY(1);
+   }
+    to {
+        transform: scaleY(0);
+   }
+} */
+
+
+/* input[list="weekDay"]{
+    border-width: 0 0 1px 0;
+    border-color: #404040;
+    background: transparent ;
+    width: 250px;
+    font-size: 2.5em;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+input::-webkit-calendar-picker-indicator {
+	display: none;
+} */
+
 /* RADIO BUTTON */
 
-input[type=radio] {
+.radio-group input[type=radio] {
     position: absolute;
     display: none;
 }
-label {
+.radio-group label {
     color: #404040;
     display: inline-block;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 5px 8px;
     font-weight: 700;
+    width: 70px;
 }
-input[type=radio]:checked + label {
+.radio-group input[type=radio]:checked + label {
     color: white;
     background: #404040;
 }
-label + input[type=radio] + label {
+.radio-group label + input[type=radio] + label {
     border-left: solid 3px #404040;
 }
 .radio-group {
     border: solid 3px #404040;
     display: inline-block;
-    margin: 20px;
+    margin: 10px 5px 15px 5px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -78,7 +198,9 @@ label + input[type=radio] + label {
 /* ENGAGEMENT BAR */
 
 #engagement-level-value{
-    font-size: 2em;
+    font-size: 2.5em;
+    color: #404040;
+
 }
 
 input[type="range"] {
@@ -95,8 +217,8 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     background-color: #404040;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border: 2px solid rgba(247, 246, 246);
     cursor: pointer;
