@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/small.css">
+    <title>Social Time</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Social Time
+        </h1>
+    </header>
+    <main>
+        <form class = "input-container container">
+            <div>
+                <h2>Social Media Platform</h2>
+                <div class="radio-group">
+                        <input type="radio" id="facebook" name="social-media"><label for="facebook">Facebook</label><input type="radio" id="option-two" name="social-media"><label for="option-two">Instagram</label><input type="radio" id="option-three" name="social-media"><label for="option-three">Twitter</label>
+                </div>
+            </div>
+            <div>
+                <h2>Engagement Level</h2>
+                <strong id="engagement-level-value">0 - 25%</strong>
+                <input type="range" id="engagementLevel" value="1" min="1" max="4" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div class = "container">
+            <h2>The Next Time to Post</h2>
+            <div class = "engagement-time-container">
+                <section class = "engagement-time">
+                    <p class = "day-of-week">Tuesday</p>
+                    <p class = "time-of-day">12pm-10pm</p>
+                </section>
+                <section class = "engagement-time">
+                    <p class = "day-of-week">Wednesday</p>
+                    <p class = "time-of-day">12pm-10pm</p>
+                </section>
+                <section class = "engagement-time">
+                    <p class = "day-of-week">Saturday</p>
+                    <p class = "time-of-day">12pm-10pm</p>
+                </section>
+            </div> 
+        </div>
+        <div class = "posting-tips-container container">
+            <h2>Posting Tips</h2>
+                <p>While people frequently check in throughout the middle of the day to see what’s going on, the peak times are around lunch breaks. When people have more time to scroll through their Facebook feeds and dig into interesting posts, engagement rises correspondingly.</p>
+            </section>
+        </div>
+    </main>
+    
+    <script src="scripts/form.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>
