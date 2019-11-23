@@ -59,7 +59,7 @@ console.log(engagementObject);
 
                 let socialMediaObject = getSocialMediaObject(socialMedia);
                 console.log(socialMediaObject);
-                let engagementGroupObj = socialMediaObject.engagement;
+                let engagementGroupObj = socialMediaObject.engagement[engagementLvl].time;
                 console.log(engagementGroupObj);
 
 
