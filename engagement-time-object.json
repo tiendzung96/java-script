@@ -1,41 +1,41 @@
 [{
-    "social-media": "facebook",
+    "socialmedia": "facebook",
     "engagement ": [{
         "lvl": 0,
         "time": [{
-                "week-day": 0 ,
-                "start-hour": 18,
-                "end-hour": 8 
+                "weekday": 0 ,
+                "starthour": 18,
+                "endhour": 8 
             }, 
             {
-                "week-day": 1 ,
-                "start-hour": 22,
-                "end-hour": 5
+                "weekday": 1 ,
+                "starthour": 22,
+                "endhour": 5
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 22,
-                "end-hour": 4
+                "weekday": 2 ,
+                "starthour": 22,
+                "endhour": 4
             }, 
             {
-                "we ek-day": 3 ,
-                "start-hour": 22,
-                "end-hour": 3
+                "we ekday": 3 ,
+                "starthour": 22,
+                "endhour": 3
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 22,
-                "end-hour": 4
+                "weekday": 4 ,
+                "starthour": 22,
+                "endhour": 4
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 22,
-                "end-hour": 4
+                "weekday": 5 ,
+                "starthour": 22,
+                "endhour": 4
             }, 
             {
-                "week-day": 6 ,
-                "start-hour": 18,
-                "end-hour": 7
+                "weekday": 6 ,
+                "starthour": 18,
+                "endhour": 7
             }
 
         ]
@@ -43,64 +43,64 @@
     {
         "lvl": 1,
         "time": [{
-                "week-day": 0 ,
-                "start-hour": 8,
-                "end-hour": 18
+                "weekday": 0 ,
+                "starthour": 8,
+                "endhour": 18
             }, 
             {
-                "week-day": 1 ,
-                "start-hour": 5,
-                "end-hour": 8
+                "weekday": 1 ,
+                "starthour": 5,
+                "endhour": 8
             }, 
             {
-                "week-day": 1 ,
-                "start-hour": 18,
-                "end-hour": 22
+                "weekday": 1 ,
+                "starthour": 18,
+                "endhour": 22
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 4,
-                "end-hour": 8
+                "weekday": 2 ,
+                "starthour": 4,
+                "endhour": 8
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 18,
-                "end-hour": 22
+                "weekday": 2 ,
+                "starthour": 18,
+                "endhour": 22
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 3,
-                "end-hour": 7
+                "weekday": 3 ,
+                "starthour": 3,
+                "endhour": 7
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 18,
-                "end-hour": 22
+                "weekday": 3 ,
+                "starthour": 18,
+                "endhour": 22
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 4,
-                "end-hour": 8
+                "weekday": 4 ,
+                "starthour": 4,
+                "endhour": 8
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 18,
-                "end-hour": 22
+                "weekday": 4 ,
+                "starthour": 18,
+                "endhour": 22
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 4,
-                "end-hour": 7
+                "weekday": 5 ,
+                "starthour": 4,
+                "endhour": 7
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 16,
-                "end-hour": 22
+                "weekday": 5 ,
+                "starthour": 16,
+                "endhour": 22
             }, 
             {
-                "week-day": 6 ,
-                "start-hour": 18,
-                "end-hour": 22
+                "weekday": 6 ,
+                "starthour": 18,
+                "endhour": 22
             }
 
         ]
@@ -108,44 +108,44 @@
     {
         "lvl": 2,
         "time": [{
-                "week-day": 1 ,
-                "start-hour": 8,
-                "end-hour": 16
+                "weekday": 1 ,
+                "starthour": 8,
+                "endhour": 16
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 8,
-                "end-hour": 13
+                "weekday": 2 ,
+                "starthour": 8,
+                "endhour": 13
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 15,
-                "end-hour": 18
+                "weekday": 2 ,
+                "starthour": 15,
+                "endhour": 18
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 7,
-                "end-hour": 9
+                "weekday": 3 ,
+                "starthour": 7,
+                "endhour": 9
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 16,
-                "end-hour": 18
+                "weekday": 3 ,
+                "starthour": 16,
+                "endhour": 18
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 8,
-                "end-hour": 9
+                "weekday": 4 ,
+                "starthour": 8,
+                "endhour": 9
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 7,
-                "end-hour": 9
+                "weekday": 5 ,
+                "starthour": 7,
+                "endhour": 9
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 12,
-                "end-hour": 16
+                "weekday": 5 ,
+                "starthour": 12,
+                "endhour": 16
             }
 
         ]
@@ -153,24 +153,24 @@
     {
         "lvl": 3,
         "time": [{
-                "week-day": 2 ,
-                "start-hour": 13,
-                "end-hour": 15
+                "weekday": 2 ,
+                "starthour": 13,
+                "endhour": 15
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 9,
-                "end-hour": 16
+                "weekday": 3 ,
+                "starthour": 9,
+                "endhour": 16
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 9,
-                "end-hour": 15
+                "weekday": 4 ,
+                "starthour": 9,
+                "endhour": 15
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 9,
-                "end-hour": 15
+                "weekday": 5 ,
+                "starthour": 9,
+                "endhour": 15
             }
             
         ]
@@ -178,43 +178,43 @@
 
 },
 {
-    "social-media": "instagram",
+    "socialmedia": "instagram",
     "engagement": [{
         "lvl": 0,
         "time": [{
-                "week-day": 0 ,
-                "start-hour": 15,
-                "end-hour": 7
+                "weekday": 0 ,
+                "starthour": 15,
+                "endhour": 7
             }, 
             {
-                "week-day": 1 ,
-                "start-hour": 22,
-                "end-hour": 7
+                "weekday": 1 ,
+                "starthour": 22,
+                "endhour": 7
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 22,
-                "end-hour": 6
+                "weekday": 2 ,
+                "starthour": 22,
+                "endhour": 6
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 22,
-                "end-hour": 5
+                "weekday": 3 ,
+                "starthour": 22,
+                "endhour": 5
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 22,
-                "end-hour": 4
+                "weekday": 4 ,
+                "starthour": 22,
+                "endhour": 4
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 22,
-                "end-hour": 5
+                "weekday": 5 ,
+                "starthour": 22,
+                "endhour": 5
             }, 
             {
-                "week-day": 6 ,
-                "start-hour": 17,
-                "end-hour": 7
+                "weekday": 6 ,
+                "starthour": 17,
+                "endhour": 7
             }
 
         ]
@@ -222,79 +222,79 @@
     {
         "lvl": 1,
         "time": [{
-                "week-day": 0 ,
-                "start-hour": 7,
-                "end-hour": 15
+                "weekday": 0 ,
+                "starthour": 7,
+                "endhour": 15
             }, 
             {
-                "week-day": 1 ,
-                "start-hour": 7,
-                "end-hour": 11
+                "weekday": 1 ,
+                "starthour": 7,
+                "endhour": 11
             }, 
             {
-                "week-day": 1 ,
-                "start-hour": 3,
-                "end-hour": 22
+                "weekday": 1 ,
+                "starthour": 3,
+                "endhour": 22
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 6,
-                "end-hour": 10
+                "weekday": 2 ,
+                "starthour": 6,
+                "endhour": 10
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 16,
-                "end-hour": 17
+                "weekday": 2 ,
+                "starthour": 16,
+                "endhour": 17
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 20,
-                "end-hour": 22
+                "weekday": 2 ,
+                "starthour": 20,
+                "endhour": 22
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 5,
-                "end-hour": 8
+                "weekday": 3 ,
+                "starthour": 5,
+                "endhour": 8
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 18,
-                "end-hour": 22
+                "weekday": 3 ,
+                "starthour": 18,
+                "endhour": 22
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 4,
-                "end-hour": 9
+                "weekday": 4 ,
+                "starthour": 4,
+                "endhour": 9
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 17,
-                "end-hour": 18
+                "weekday": 4 ,
+                "starthour": 17,
+                "endhour": 18
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 20,
-                "end-hour": 22
+                "weekday": 4 ,
+                "starthour": 20,
+                "endhour": 22
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 5,
-                "end-hour": 8
+                "weekday": 5 ,
+                "starthour": 5,
+                "endhour": 8
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 17,
-                "end-hour": 22
+                "weekday": 5 ,
+                "starthour": 17,
+                "endhour": 22
             }, 
             {
-                "week-day": 6 ,
-                "start-hour": 7,
-                "end-hour": 10
+                "weekday": 6 ,
+                "starthour": 7,
+                "endhour": 10
             },
             {
-                "week-day": 6 ,
-                "start-hour": 11,
-                "end-hour": 17
+                "weekday": 6 ,
+                "starthour": 11,
+                "endhour": 17
             }
 
         ]
@@ -302,54 +302,54 @@
     {
         "lvl": 2,
         "time": [{
-                "week-day": 1 ,
-                "start-hour": 11,
-                "end-hour": 15
+                "weekday": 1 ,
+                "starthour": 11,
+                "endhour": 15
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 10,
-                "end-hour": 16
+                "weekday": 2 ,
+                "starthour": 10,
+                "endhour": 16
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 17,
-                "end-hour": 20
+                "weekday": 2 ,
+                "starthour": 17,
+                "endhour": 20
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 8,
-                "end-hour": 11
+                "weekday": 3 ,
+                "starthour": 8,
+                "endhour": 11
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 12,
-                "end-hour": 18
+                "weekday": 3 ,
+                "starthour": 12,
+                "endhour": 18
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 9,
-                "end-hour": 17
+                "weekday": 4 ,
+                "starthour": 9,
+                "endhour": 17
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 18,
-                "end-hour": 20
+                "weekday": 4 ,
+                "starthour": 18,
+                "endhour": 20
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 8,
-                "end-hour": 10
+                "weekday": 5 ,
+                "starthour": 8,
+                "endhour": 10
             },
             {
-                "week-day": 5 ,
-                "start-hour": 12,
-                "end-hour": 17
+                "weekday": 5 ,
+                "starthour": 12,
+                "endhour": 17
             },
             {
-                "week-day": 6 ,
-                "start-hour": 10,
-                "end-hour": 11 
+                "weekday": 6 ,
+                "starthour": 10,
+                "endhour": 11 
             }
 
         ]
@@ -357,57 +357,57 @@
     {
         "lvl": 3,
         "time": [{
-                "week-day": 3 ,
-                "start-hour": 11,
-                "end-hour": 12
+                "weekday": 3 ,
+                "starthour": 11,
+                "endhour": 12
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 9,
-                "end-hour": 12
+                "weekday": 5 ,
+                "starthour": 9,
+                "endhour": 12
             }
         ]
     }]
 
 },
 {
-    "social-media": "twitter",
+    "socialmedia": "twitter",
     "engagement ": [{
         "lvl": 0,
         "time": [{
-                "week-day": 0 ,
-                "start-hour": 21,
-                "end-hour": 8 
+                "weekday": 0 ,
+                "starthour": 21,
+                "endhour": 8 
             }, 
             {
-                "week-day": 1 ,
-                "start-hour": 20,
-                "end-hour": 6
+                "weekday": 1 ,
+                "starthour": 20,
+                "endhour": 6
             }, 
             {
-                "week-day": 2 ,
-                "start-hour":21,
-                "end-hour": 6
+                "weekday": 2 ,
+                "starthour":21,
+                "endhour": 6
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 21,
-                "end-hour": 6
+                "weekday": 3 ,
+                "starthour": 21,
+                "endhour": 6
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 21,
-                "end-hour": 6
+                "weekday": 4 ,
+                "starthour": 21,
+                "endhour": 6
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 18,
-                "end-hour": 5
+                "weekday": 5 ,
+                "starthour": 18,
+                "endhour": 5
             }, 
             {
-                "week-day": 6 ,
-                "start-hour": 16,
-                "end-hour": 8
+                "weekday": 6 ,
+                "starthour": 16,
+                "endhour": 8
             }
 
         ]
@@ -415,128 +415,128 @@
     {
         "lvl": 1,
         "time": [{
-                "week-day": 0 ,
-                "start-hour": 8,
-                "end-hour": 9
+                "weekday": 0 ,
+                "starthour": 8,
+                "endhour": 9
             }, 
             {
-                "week-day": 0 ,
-                "start-hour": 10,
-                "end-hour": 21
+                "weekday": 0 ,
+                "starthour": 10,
+                "endhour": 21
             }, 
             {
-                "week-day": 1,
-                "start-hour": 6,
-                "end-hour": 9
+                "weekday": 1,
+                "starthour": 6,
+                "endhour": 9
             }, 
             {
-                "week-day": 1,
-                "start-hour": 14,
-                "end-hour": 20
+                "weekday": 1,
+                "starthour": 14,
+                "endhour": 20
             }, 
             {
-                "week-day": 2,
-                "start-hour": 6,
-                "end-hour": 9
+                "weekday": 2,
+                "starthour": 6,
+                "endhour": 9
             }, 
             {
-                "week-day": 2,
-                "start-hour": 17,
-                "end-hour": 19
+                "weekday": 2,
+                "starthour": 17,
+                "endhour": 19
             }, 
             {
-                "week-day": 3,
-                "start-hour": 6,
-                "end-hour": 7
+                "weekday": 3,
+                "starthour": 6,
+                "endhour": 7
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 17,
-                "end-hour": 21
+                "weekday": 3 ,
+                "starthour": 17,
+                "endhour": 21
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 6,
-                "end-hour": 9
+                "weekday": 4 ,
+                "starthour": 6,
+                "endhour": 9
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 13,
-                "end-hour": 21
+                "weekday": 4 ,
+                "starthour": 13,
+                "endhour": 21
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 5,
-                "end-hour": 7
+                "weekday": 5 ,
+                "starthour": 5,
+                "endhour": 7
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 16,
-                "end-hour": 18
+                "weekday": 5 ,
+                "starthour": 16,
+                "endhour": 18
             }, 
             {
-                "week-day": 6 ,
-                "start-hour": 8,
-                "end-hour": 9
+                "weekday": 6 ,
+                "starthour": 8,
+                "endhour": 9
             },
             {
-                "week-day": 6 ,
-                "start-hour": 11,
-                "end-hour": 17
+                "weekday": 6 ,
+                "starthour": 11,
+                "endhour": 17
             }
         ]
     },
     {
         "lvl": 2,
         "time": [{
-                "week-day": 0 ,
-                "start-hour": 9,
-                "end-hour": 10
+                "weekday": 0 ,
+                "starthour": 9,
+                "endhour": 10
             }, 
             {
-                "week-day": 1 ,
-                "start-hour": 11,
-                "end-hour": 14
+                "weekday": 1 ,
+                "starthour": 11,
+                "endhour": 14
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 12,
-                "end-hour": 17
+                "weekday": 2 ,
+                "starthour": 12,
+                "endhour": 17
             }, 
             {
-                "week-day": 2 ,
-                "start-hour": 19,
-                "end-hour": 21
+                "weekday": 2 ,
+                "starthour": 19,
+                "endhour": 21
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 7,
-                "end-hour": 9
+                "weekday": 3 ,
+                "starthour": 7,
+                "endhour": 9
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 15,
-                "end-hour": 21
+                "weekday": 3 ,
+                "starthour": 15,
+                "endhour": 21
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 10,
-                "end-hour": 13
+                "weekday": 4 ,
+                "starthour": 10,
+                "endhour": 13
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 7,
-                "end-hour": 8
+                "weekday": 5 ,
+                "starthour": 7,
+                "endhour": 8
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 12,
-                "end-hour": 16
+                "weekday": 5 ,
+                "starthour": 12,
+                "endhour": 16
             },
             {
-                "week-day": 6 ,
-                "start-hour": 9,
-                "end-hour": 11
+                "weekday": 6 ,
+                "starthour": 9,
+                "endhour": 11
             }
     
 
@@ -545,24 +545,24 @@
     {
         "lvl": 3,
         "time": [{
-                "week-day": 2 ,
-                "start-hour": 9,
-                "end-hour": 12
+                "weekday": 2 ,
+                "starthour": 9,
+                "endhour": 12
             }, 
             {
-                "week-day": 3 ,
-                "start-hour": 9,
-                "end-hour": 15
+                "weekday": 3 ,
+                "starthour": 9,
+                "endhour": 15
             }, 
             {
-                "week-day": 4 ,
-                "start-hour": 9,
-                "end-hour": 10
+                "weekday": 4 ,
+                "starthour": 9,
+                "endhour": 10
             }, 
             {
-                "week-day": 5 ,
-                "start-hour": 8,
-                "end-hour": 12
+                "weekday": 5 ,
+                "starthour": 8,
+                "endhour": 12
             }
             
         ]

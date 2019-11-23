@@ -51,8 +51,12 @@ console.log(engagementObject);
                 return document.querySelector(DOMstrings.engagementLvl).value;   
             },
 
-            getNextPostingTime: function(weekDay, socialMedia, engagement){
-                console.log(engagementObject);
+            getPostingTime: function(weekDay, socialMedia, engagement){
+                // console.log(engagementObject);
+                let socialMediaObject;
+    
+                socialMediaObject = engagementObject.find(element  => element.attributes["social-media"] === socialMedia);
+                console.log(socialMediaObject);
             }
         }
 
@@ -86,7 +90,7 @@ console.log(engagementObject);
             socialMedia = DataCtrl.getSocialMedia();
             engagement = DataCtrl.getEngagementValue();
             console.log(weekDay, socialMedia, engagement);
-            DataCtrl.getNextPostingTime(weekDay, socialMedia, engagement);
+            DataCtrl.getPostingTime(weekDay, socialMedia, engagement);
             
             
         }
@@ -94,7 +98,6 @@ console.log(engagementObject);
         const setupEventListeners = function(){
 
             document.querySelector(DOMstrings.inputBtn).addEventListener('click', outputData);
-            // document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem);
 
         };
         
