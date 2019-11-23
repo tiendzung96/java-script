@@ -1,6 +1,6 @@
 [{
     "socialmedia": "facebook",
-    "engagement ": [{
+    "engagement": [{
         "lvl": 0,
         "time": [{
                 "weekday": 0 ,
@@ -372,7 +372,7 @@
 },
 {
     "socialmedia": "twitter",
-    "engagement ": [{
+    "engagement": [{
         "lvl": 0,
         "time": [{
                 "weekday": 0 ,

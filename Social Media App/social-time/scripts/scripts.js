@@ -51,12 +51,18 @@ console.log(engagementObject);
                 return document.querySelector(DOMstrings.engagementLvl).value;   
             },
 
-            getPostingTime: function(weekDay, socialMedia, engagement){
+            getPostingTime: function(weekDay, socialMedia, engagementLvl){
                 // console.log(engagementObject);
-                let socialMediaObject;
-    
-                socialMediaObject = engagementObject.find(element  => element.attributes["social-media"] === socialMedia);
+                function getSocialMediaObject(socMedia){
+                   return engagementObject.find(element => element.socialmedia === socMedia); 
+                }
+
+                let socialMediaObject = getSocialMediaObject(socialMedia);
                 console.log(socialMediaObject);
+                let engagementGroupObj = socialMediaObject.engagement;
+                console.log(engagementGroupObj);
+
+
             }
         }
 
@@ -85,12 +91,12 @@ console.log(engagementObject);
     const controller = (function(UICtrl, DataCtrl){
 
         const outputData = function(){
-            let weekDay, socialMedia, engagement ;
+            let weekDay, socialMedia, engagementLvl ;
             weekDay = DataCtrl.getDay();
             socialMedia = DataCtrl.getSocialMedia();
-            engagement = DataCtrl.getEngagementValue();
-            console.log(weekDay, socialMedia, engagement);
-            DataCtrl.getPostingTime(weekDay, socialMedia, engagement);
+            engagementLvl = DataCtrl.getEngagementValue();
+            console.log(weekDay, socialMedia, engagementLvl);
+            DataCtrl.getPostingTime(weekDay, socialMedia, engagementLvl);
             
             
         }
