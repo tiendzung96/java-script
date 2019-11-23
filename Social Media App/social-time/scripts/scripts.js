@@ -2,7 +2,8 @@ const DOMstrings = {
     facebookCheck: '#facebook',
     engagementLvl: '#engagementLevel',
     inputBtn: '.inputBtn',
-    engagementContainer: '.engagement-time-container'
+    engagementContainer: '.engagement-time-container',
+    socialMediaInput: '.radio-group'
 };
 
 const engagementURL = 'https://raw.githubusercontent.com/tiendzung96/java-script/master/engagement-time-object-nov2019.json';
@@ -124,6 +125,11 @@ console.log(engagementObject);
     //GLOBAL APP CONTROLLER
     const controller = (function(UICtrl, DataCtrl){
 
+        const toggleButton = function(){
+            document.querySelector(DOMstrings.inputBtn).classList.remove('hidden');
+
+        }
+        
         const outputData = function(){
             let weekDay, socialMedia, engagementLvl, postingTimeObj;
             weekDay = DataCtrl.getDay();
@@ -134,12 +140,10 @@ console.log(engagementObject);
             postingTimeObj = DataCtrl.getPostingTime(weekDay, socialMedia, engagementLvl);
             console.log(postingTimeObj);
             UICtrl.displayPostingTime(postingTimeObj, socialMedia, engagementLevel);
-
-            // UICtrl.displayPostingTime()
         }
 
         const setupEventListeners = function(){
-
+            document.querySelector(DOMstrings.socialMediaInput).addEventListener('change', toggleButton)
             document.querySelector(DOMstrings.inputBtn).addEventListener('click', outputData);
             document.querySelector(DOMstrings.inputBtn).addEventListener('click', outputData);
 

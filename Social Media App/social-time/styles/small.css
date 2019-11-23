@@ -138,7 +138,11 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-webkit-slider-thumb:active {
     transform: scale(1.4);
 }
-/* ENGAGEMENT BAR */
+/* SUMMIT BUTTON */
+.hidden{
+    display: none;
+}
+
 button{
     padding: 10px 60px;
     background: transparent;
@@ -149,7 +153,7 @@ button{
     font-size: 12pt;
     color: #404040;
     text-transform: uppercase;
-    letter-spacing: 1pt;
+    letter-spacing: 2pt;
     transition: .2s ease-in-out;
 
 }
