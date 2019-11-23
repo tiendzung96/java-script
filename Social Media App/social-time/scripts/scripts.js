@@ -5,7 +5,7 @@ const DOMstrings = {
     engagementContainer: '.engagement-time-container'
 };
 
-const engagementURL = 'https://raw.githubusercontent.com/tiendzung96/java-script/master/engagement-time-object.json';
+const engagementURL = 'https://raw.githubusercontent.com/tiendzung96/java-script/master/engagement-time-object-nov2019.json';
 
 fetch(engagementURL)
 .then((response) => response.json())
@@ -26,10 +26,7 @@ console.log(engagementObject);
                     }
                 }
                 return opt.value;
-                        
-                // display its value and text
-                console.log( opt.value );
-                console.log( opt.text );
+                
             },
             getSocialMedia: function(){
                 let value, form, name;
@@ -52,16 +49,21 @@ console.log(engagementObject);
             },
 
             getPostingTime: function(weekDay, socialMedia, engagementLvl){
+                let weekDayInt = parseInt(weekDay);
                 // console.log(engagementObject);
                 function getSocialMediaObject(socMedia){
                    return engagementObject.find(element => element.socialmedia === socMedia); 
                 }
 
                 let socialMediaObject = getSocialMediaObject(socialMedia);
-                console.log(socialMediaObject);
+                // console.log(socialMediaObject);
                 let engagementGroupObj = socialMediaObject.engagement[engagementLvl].time;
-                console.log(engagementGroupObj);
 
+                function getTimeInWeekDay(wkDay){
+                    return engagementGroupObj.filter(element => element.weekday === wkDay); 
+                }
+
+                return getTimeInWeekDay(weekDayInt);
 
             }
         }
@@ -70,17 +72,49 @@ console.log(engagementObject);
     
     //UI CONTROLLER
     const UIController = (function(){
+        let convertFromMilitaryHour = function(hour){
+            if (hour > 12 ){
+                newHour = hour - 12 + 'pm';
+            } else if (hour < 12 && hour !== 0){
+                newHour = hour + 'am';
+            } else {
+                newHour = 12 + 'am';
+            }
+            return newHour;
+        }
 
         return{
-        
-            // displayData: function(obj){
-            //     let html, newHtml, element;
-            //     //Create HTML String with placeholder text
-            //     element = DOMstring.engagementContainer;
-            //     html = '<h2>The Next Time to Post</h2><div><section class = "engagement-time time-0"><p class = "day-of-week">%day-0%</p><p class = "time-of-day">%time-range-0%</p></section><section class = "engagement-time time-2"><p class = "day-of-week">%day-1%</p><p class = "time-of-day">%time-range-1%</p></section><section class = "engagement-time time-2"><p class = "day-of-week">%day-2%</p><p class = "time-of-day">%time-range-2%</p></section></div>'
-            //     //Replace placeholder text with actual data
-            //     newHtml = newHtml.replace('%day-0%', obj.day[0]);
-            // }
+            displayPostingTime: function(arr, socMedia){
+                let heading, section, element, weekDayStrings, newStartHour, newEndHour, socialMediaPlatform, engagementLevel;
+                element = DOMstrings.engagementContainer;
+
+                dayInput = document.querySelector('#weekDay');
+                weekDayStrings = dayInput.options[dayInput.selectedIndex].text;
+                console.log (weekDayStrings);
+
+                engagementLevel = document.getElementById('engagement-level-value').textContent;
+
+                socialMediaPlatform = socMedia.slice(0,1).toLocaleUpperCase() + socMedia.slice(1);
+
+                heading = '<h2>' + weekDayStrings + '\'s Posting Time</h2><p>with ' + engagementLevel + ' Engagement on ' + socialMediaPlatform + '</p><div>';
+
+                section = '';
+
+                for (i = 0; i < arr.length; i++){
+                    console.log(arr[i]);
+
+                    newStartHour= convertFromMilitaryHour(arr[i].starthour);
+                    newEndHour= convertFromMilitaryHour(arr[i].endhour);
+
+                    console.log(newStartHour, newEndHour);
+
+                    section += '<div><section class = "engagement-time"><p class = "time-of-day">'+ newStartHour + ' - ' + newEndHour + '</p></section>';
+       
+                }
+
+                document.querySelector(element).innerHTML = heading + section + '</div>';
+           
+            }
             
         }
 
@@ -91,18 +125,22 @@ console.log(engagementObject);
     const controller = (function(UICtrl, DataCtrl){
 
         const outputData = function(){
-            let weekDay, socialMedia, engagementLvl ;
+            let weekDay, socialMedia, engagementLvl, postingTimeObj;
             weekDay = DataCtrl.getDay();
             socialMedia = DataCtrl.getSocialMedia();
             engagementLvl = DataCtrl.getEngagementValue();
             console.log(weekDay, socialMedia, engagementLvl);
-            DataCtrl.getPostingTime(weekDay, socialMedia, engagementLvl);
-            
-            
+
+            postingTimeObj = DataCtrl.getPostingTime(weekDay, socialMedia, engagementLvl);
+            console.log(postingTimeObj);
+            UICtrl.displayPostingTime(postingTimeObj, socialMedia, engagementLevel);
+
+            // UICtrl.displayPostingTime()
         }
 
         const setupEventListeners = function(){
 
+            document.querySelector(DOMstrings.inputBtn).addEventListener('click', outputData);
             document.querySelector(DOMstrings.inputBtn).addEventListener('click', outputData);
 
         };

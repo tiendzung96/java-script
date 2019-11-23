@@ -31,6 +31,8 @@ main{
     text-align: center;
 }
 
+
+
 .input-container>div>p, .input-container span{
     margin-bottom: 2px;
     font-weight: 600;
@@ -53,7 +55,7 @@ h2{
     font-size: 1.8em;
     font-weight: 700;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 /* WEEK DAY LIST */
@@ -162,18 +164,23 @@ button:hover{
 }
 
 /* ENGAGEMENT TIME */
+.engagement-time-container{
+    text-align: center;
+}
 
-.day-of-week{
-    font-size: 2.8em;
-    font-weight: 400;
-    margin: 0;
-    color: #01baef;
+.engagement-time-container > p{
+    font-weight: 700; 
+    margin-top: 0;
+    color: #404040;
 }
 
 .time-of-day{
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 1pt;
-    margin-top: -5px;
-    margin-left: 10px;
-    color: #707070;
+    font-size: 2.2em;
+    color: white;
+    background-color: #404040;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
 }
